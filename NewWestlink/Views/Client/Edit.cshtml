@@ -1,0 +1,58 @@
+﻿@using NewWestlink.Models
+@model NewWestlink.Models.Client
+@{
+    ViewBag.Title = "New Client";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@if(Model == null)
+{
+    <h2>
+        Add Client</h2>    
+}
+else
+{
+    <h2>
+        Edit Client</h2>        
+}
+@using (Html.BeginForm())
+{
+    <div>
+        <fieldset>
+            <legend>Client</legend>
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Forename)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Forename)
+                @Html.ValidationMessageFor(m => m.Forename)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Surname)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Surname)
+                @Html.ValidationMessageFor(m => m.Surname)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Age)
+            </div>
+            <div class="editor-field">
+                @Html.TextBoxFor(m => m.Age)
+                @Html.ValidationMessageFor(m => m.Age)
+            </div>
+            <div class="editor-label">
+                @Html.LabelFor(m => m.Gender)
+            </div>
+            <div class="editor-field">
+                @Html.EnumDropDownListFor(m => m.Gender)                
+            </div>
+            <div class="editor-label">
+                @Html.CheckBoxFor(m => m.IsEmployed)
+                @Html.LabelFor(m => m.IsEmployed)
+            </div>
+            <p>
+                <input type="submit" value="Save" />
+            </p>
+        </fieldset>
+    </div>
+}

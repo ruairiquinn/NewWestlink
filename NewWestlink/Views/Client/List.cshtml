@@ -1,0 +1,26 @@
+﻿@model IQueryable<NewWestlink.Models.Client>
+
+@{
+    ViewBag.Title = "List Clients";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>List Clients</h2>    
+
+<ul>
+    @foreach (var c in Model)
+    {
+        <li>
+            @Html.Encode(c.Forename)
+            @Html.Encode(c.Surname)
+            @Html.Encode(c.Age)
+            @Html.Encode(c.IsEmployed)
+            @Html.ActionLink("Edit", "Edit", new { id=c.Id })
+        </li>
+    }
+
+</ul>
+
+
+
+
