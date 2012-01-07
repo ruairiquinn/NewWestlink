@@ -5,7 +5,7 @@ to use a different color start by replacing all instances of
 ----------------------------------------------------------*/
 body
 {
-    background-color: #5c87b2;
+    background-color: #1b1b24; /* #5c87b2;    */
     font-size: 75%;
     font-family: Verdana, Tahoma, Arial, "Helvetica Neue", Helvetica, Sans-Serif;
     margin: 0;
@@ -43,7 +43,7 @@ p, ul
 h1, h2, h3, h4, h5, h6
 {
     font-size: 1.5em;
-    color: #000;
+    color: #9391AC;
 }
 
 h1
@@ -86,6 +86,26 @@ page width. Or, you can specify an exact pixel width. */
     width: 90%;
     margin-left: auto;
     margin-right: auto;
+}
+
+#heroku-header {
+overflow: hidden;
+display: inline-block;
+margin: 0;
+padding: 0;
+border: 0;
+font-weight: inherit;
+font-style: inherit;
+font-size: 100%;
+font-family: arial, helvetica, sans-serif;
+vertical-align: baseline;
+min-width: 1044px;
+background-color: #29264d;
+border-bottom-style: solid;
+border-bottom-width: 3px;
+border-bottom-color: #494573;
+height: 91px;
+border-image: initial;
 }
 
 #header
@@ -184,6 +204,7 @@ ul#menu li.selected a
 
 fieldset 
 {
+    background-color: #1b1b24;
     border:1px solid #ddd;
     padding:0 1.4em 1.4em 1.4em;
     margin:0 0 1.5em 0;

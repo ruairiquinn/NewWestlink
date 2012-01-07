@@ -1,3 +1,8 @@
 <Modules>
   <Module PersistentId="E39403D2-A027-4874-9838-F9A96561268E" ModuleId="NewWestlink" />
+  <Module PersistentId="StructureMap, Version=2.6.3.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223" ModuleId="StructureMap" />
+  <Module PersistentId="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="mscorlib" />
+  <Module PersistentId="A88F3951-7149-44B0-82B1-551B31EEE0C9" ModuleId="Core" />
+  <Module PersistentId="794EA97F-FD05-4D6C-A6DA-6580FC130BE3" ModuleId="Console" />
+  <Module PersistentId="EntityFramework, Version=4.2.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" ModuleId="EntityFramework" />
 </Modules>

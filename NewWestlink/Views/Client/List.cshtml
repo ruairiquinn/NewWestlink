@@ -1,13 +1,11 @@
-﻿@model IQueryable<NewWestlink.Models.Client>
-
-@{
-    ViewBag.Title = "List Clients";
-    Layout = "~/Views/Shared/_Layout.cshtml";
-}
-
-<h2>List Clients</h2>    
-
-<ul>
+﻿@using Core.Interfaces
+@using NewWestlink.Infrastructure.Extensions
+@using Telerik.Web.Mvc.UI
+@model IQueryable<IClient>
+@{ ViewBag.Title = "List Clients"; Layout = "~/Views/Shared/_Layout.cshtml"; }
+<h2>
+    List Clients</h2>
+<ul>    
     @foreach (var c in Model)
     {
         <li>
@@ -15,12 +13,7 @@
             @Html.Encode(c.Surname)
             @Html.Encode(c.Age)
             @Html.Encode(c.IsEmployed)
-            @Html.ActionLink("Edit", "Edit", new { id=c.Id })
+            @Html.ActionLink("Edit", "Edit", new { id = c.Id })
         </li>
     }
-
 </ul>
-
-
-
-
