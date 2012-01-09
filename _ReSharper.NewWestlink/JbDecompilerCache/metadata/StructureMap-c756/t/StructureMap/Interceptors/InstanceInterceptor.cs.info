@@ -1,0 +1,14 @@
+﻿Code version: 6.0.2202.688
+Assembly name StructureMap, Version=2.6.3.0, Culture=neutral, PublicKeyToken=e60ad81abae3c223 mvid {36bef1e3-36a3-44cf-8d9c-6ea60c0f7033}
+* ref mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {09b8fe2b-a929-40cd-bfbe-747dce099cf6}
+* ref System, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {a88ad4d1-97fe-4396-8361-799f800d8bb6}
+* ref System.Core, Version=3.5.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {87262f64-19e0-4217-a477-3d6530760806}
+* ref System.Xml, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089
+  mvid {8228ed4f-fef4-4bc8-bcb6-df137b634dd1}
+* ref System.Web, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  mvid {040f47d0-e51b-4250-a833-7dc7af404086}
+* ref System.Configuration, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a
+  mvid {14eda1ed-0fb1-4728-bc17-357d77cf79cf}

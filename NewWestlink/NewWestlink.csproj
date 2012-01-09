@@ -282,11 +282,10 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>UploadLocalization.zh-CN.resx</DependentUpon>
     </Compile>
-    <Compile Include="ClientDatabaseContext.cs" />
-    <Compile Include="ClientEntityFrameworkRepository.cs" />
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\ClientController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\ReferenceDatasController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -303,7 +302,9 @@
     <Compile Include="Infrastructure\StructureMapArtifacts\StructureMapControllerFactory.cs" />
     <Compile Include="Models\AccountModels.cs" />
     <Compile Include="Models\Client.cs" />
+    <Compile Include="Models\NewWestlinkContext.cs" />
     <Compile Include="Models\ReferenceData.cs" />
+    <Compile Include="Models\ReferenceDataRepository.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -509,6 +510,7 @@
     <Content Include="Content\2011.3.1115\Windows7\slider-v.gif" />
     <Content Include="Content\2011.3.1115\Windows7\sprite-vertical.png" />
     <Content Include="Content\2011.3.1115\Windows7\sprite.png" />
+    <Content Include="Content\HerokuSite.css" />
     <Content Include="Global.asax" />
     <Content Include="jqunback-1.51.min.js" />
     <Content Include="README.txt" />
@@ -786,6 +788,24 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Client\ListTelerik.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ReferenceDatas\Create.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ReferenceDatas\Edit.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ReferenceDatas\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ReferenceDatas\Details.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ReferenceDatas\Index.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\ReferenceDatas\_CreateOrEdit.cshtml" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" />

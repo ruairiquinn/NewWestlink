@@ -5,7 +5,7 @@
     <title>@ViewBag.Title</title>
     <link href="@Url.Content("~/Content/Site.css")" rel="stylesheet" type="text/css" />
     <script src="@Url.Content("~/Scripts/jquery-1.4.4.min.js")" type="text/javascript"></script>
-    @(Html.Telerik().StyleSheetRegistrar().DefaultGroup(group => group.Add("telerik.common.css").Add("telerik.metro.css").Combined(true).Compress(true)))    
+    @(Html.Telerik().StyleSheetRegistrar().DefaultGroup(group => group.Add("telerik.common.css").Add("telerik.black.css").Combined(true).Compress(true)))    
 </head>
 <body>
     <div class="page">
@@ -22,6 +22,12 @@
                 @Html.Telerik().Menu().Name("myMenu").Items(items =>
                                     {
                                         items.Add().Text("Home").Action("Index", "Home");
+                                        items.Add().Text("Ref Data")
+                                            .Items(sub =>
+                                                       {
+                                                           sub.Add().Text("Add Ref Data").Action("Create", "ReferenceDatas");
+                                                           sub.Add().Text("List Ref Data").Action("Index", "ReferenceDatas");
+                                                       });                                                    
                                         items.Add().Text("Client")
                                             .Items(sub1 =>
                                                         {

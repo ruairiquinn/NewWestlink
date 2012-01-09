@@ -1,0 +1,2 @@
+C:\Code\NewWestlink\Console\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Code\NewWestlink\Console\bin\Debug\Console.exe.config

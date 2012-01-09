@@ -1,8 +1,11 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using System;
+using System.ComponentModel.DataAnnotations;
+using Core.Enumerations;
+using Core.Interfaces;
 
 namespace NewWestlink.Models
 {
-    public class Client
+    public class Client : IClient
     {        
         public string Id { get; set; }
 
@@ -23,5 +26,7 @@ namespace NewWestlink.Models
 
         [Display(Name = "Gender")]
         public Enumerations.Gender? Gender { get; set; }
+
+        public DateTime LastUpdated { get; set; }
     }
 }

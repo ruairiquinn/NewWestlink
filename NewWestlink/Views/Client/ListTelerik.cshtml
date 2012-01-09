@@ -1,0 +1,24 @@
+﻿@using Core.Interfaces
+@using NewWestlink.Infrastructure.Extensions
+@using Telerik.Web.Mvc.UI
+@model IQueryable<IClient>
+@{ ViewBag.Title = "List Telerik Clients"; Layout = "~/Views/Shared/_Layout.cshtml"; }
+<h2>
+    List Clients</h2>
+<ul>
+    @(Html.Telerik().Grid(Model).Name("ClientList").Columns(columns =>
+                                                                 {
+                                                                     columns.Bound(c => c.Forename);
+                                                                     columns.Bound(c => c.Surname);
+                                                                     columns.Bound(c => c.Age);
+                                                                     columns.Bound(c => c.IsEmployed);
+                                                                     columns.Bound(c => c.Gender);
+                                                                     columns.Bound(c => c.LastUpdated);
+                                                                     //columns.Command(commands =>
+                                                                     //                    {
+                                                                     //                        commands.Edit();
+                                                                     //                        commands.Delete();
+                                                                     //                    });
+                                                                     columns.Template(c => @Html.ActionLink("Edit", "Edit", new { id = c.Id }));
+                                                                 }).Sortable().Pageable().Filterable().Groupable())     
+</ul>

@@ -1,0 +1,21 @@
+﻿@using NewWestlink.Models
+@using Telerik.Web.Mvc.UI
+
+@{ ViewBag.Title = "List Async Clients"; Layout = "~/Views/Shared/_Layout.cshtml"; }
+<h2>
+    List Clients</h2>
+<ul>
+    @(Html.Telerik().Grid<Client>().Name("AsyncClientList")
+    .Columns(columns =>
+                {
+                    columns.Bound(c => c.Forename);
+                    columns.Bound(c => c.Surname);
+                    columns.Bound(c => c.Age);
+                    columns.Bound(c => c.IsEmployed);
+                    columns.Bound(c => c.Gender);
+                    columns.Bound(c => c.LastUpdated);
+                    columns.Template(c => @Html.ActionLink("Edit", "Edit", new { id = c.Id}));
+                }).Sortable().Pageable().Filterable().Groupable()
+                                .DataBinding(dataBinding => dataBinding.Ajax().Select("ListAsync", "Grid")))
+</ul>
+

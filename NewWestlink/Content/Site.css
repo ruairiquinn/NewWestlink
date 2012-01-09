@@ -10,7 +10,8 @@ body
     font-family: Verdana, Tahoma, Arial, "Helvetica Neue", Helvetica, Sans-Serif;
     margin: 0;
     padding: 0;
-    color: #696969;
+    /*color: #696969;*/
+    color: white;
 }
 
 a:link
@@ -130,7 +131,8 @@ border-image: initial;
 #main
 {
     padding: 30px 30px 15px 30px;
-    background-color: #fff;
+    background-color: #29264d;
+    /*background-color: #fff;*/
     margin-bottom: 30px;
     _height: 1px; /* only IE6 applies CSS properties starting with an underscore */
 }
