@@ -297,6 +297,7 @@
     <Compile Include="Infrastructure\HtmlHelpers\DictionaryExtensions.cs" />
     <Compile Include="Infrastructure\HtmlHelpers\HtmlHelpersExtensions.cs" />
     <Compile Include="Infrastructure\HtmlHelpers\StringExtensions.cs" />
+    <Compile Include="Infrastructure\LogProcessor.cs" />
     <Compile Include="Infrastructure\StructureMapArtifacts\CustomerInterceptor.cs" />
     <Compile Include="Infrastructure\StructureMapArtifacts\RepositoryRegistry.cs" />
     <Compile Include="Infrastructure\StructureMapArtifacts\StructureMapControllerFactory.cs" />
@@ -543,7 +544,9 @@
     <Content Include="Scripts\2011.3.1115\telerik.treeview.min.js" />
     <Content Include="Scripts\2011.3.1115\telerik.upload.min.js" />
     <Content Include="Scripts\2011.3.1115\telerik.window.min.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
