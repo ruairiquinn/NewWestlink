@@ -20,9 +20,16 @@ namespace TestHarness
 
             var processor = new LogProcessor(path);
 
-            foreach (var result in processor.CountTask.Result.OrderByDescending(x => x.Value))
+            try
             {
-                Console.WriteLine(result);    
+                foreach (var result in processor.CountTask.Result.OrderByDescending(x => x.Value))
+                {
+                    Console.WriteLine(result);
+                }
+            }
+            catch (Exception x)
+            {
+                Console.WriteLine(x);                
             }
             
             Console.ReadLine();

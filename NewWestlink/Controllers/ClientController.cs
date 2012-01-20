@@ -12,7 +12,7 @@ namespace NewWestlink.Controllers
     {
         #region Fields
         private const string EditActionName = "Edit";
-        private const string ListActionName = "List";
+        private const string ListActionName = "ListTelerik";
         private readonly IClientRepository _clientRepository; 
         #endregion
 

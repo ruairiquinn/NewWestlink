@@ -54,3 +54,7 @@ C:\Code\NewWestlink\NewWestlink\bin\Core.pdb
 C:\Code\NewWestlink\NewWestlink\bin\Glimpse.Mvc3.dll
 C:\Code\NewWestlink\NewWestlink\bin\EntityFramework.dll
 C:\Code\NewWestlink\NewWestlink\bin\EntityFramework.xml
+C:\Code\NewWestlink\NewWestlink\bin\log4net.dll
+C:\Code\NewWestlink\NewWestlink\bin\NServiceBus.Core.dll
+C:\Code\NewWestlink\NewWestlink\bin\NServiceBus.dll
+C:\Code\NewWestlink\NewWestlink\bin\log4net.xml
