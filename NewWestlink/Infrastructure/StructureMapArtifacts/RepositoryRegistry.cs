@@ -8,8 +8,8 @@ namespace NewWestlink.Infrastructure.StructureMapArtifacts
     {
         public RepositoryRegistry()
         {
-            For<IClient>().Use<Client>();   //.InterceptWith(new CustomInterceptor());
-            For<IClientRepository>().Use<ClientRepository>();   //.InterceptWith(new CustomInterceptor());
+            For<IClient>().Use<Client>();   //.InterceptWith(new CustomInterceptor());            
+            For<BaseRavenRepository<Client>>().Use<ClientRepository>();
 
             For<IReferenceDataRepository>().Use<ReferenceDataRepository>();   //.InterceptWith(new CustomInterceptor());
 

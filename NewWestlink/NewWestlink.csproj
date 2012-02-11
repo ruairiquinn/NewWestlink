@@ -298,6 +298,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Infrastructure\BaseRavenRepository.cs" />
     <Compile Include="Infrastructure\Bootstrapper.cs" />
     <Compile Include="Infrastructure\ClientExtension.cs" />
     <Compile Include="Infrastructure\ClientRepository.cs" />
@@ -306,8 +307,8 @@
     <Compile Include="Infrastructure\HtmlHelpers\DictionaryExtensions.cs" />
     <Compile Include="Infrastructure\HtmlHelpers\HtmlHelpersExtensions.cs" />
     <Compile Include="Infrastructure\HtmlHelpers\StringExtensions.cs" />
+    <Compile Include="Infrastructure\IRepository.cs" />
     <Compile Include="Infrastructure\LogProcessor.cs" />
-    <Compile Include="Infrastructure\StructureMapArtifacts\CustomerInterceptor.cs" />
     <Compile Include="Infrastructure\StructureMapArtifacts\RepositoryRegistry.cs" />
     <Compile Include="Infrastructure\StructureMapArtifacts\StructureMapControllerFactory.cs" />
     <Compile Include="Models\AccountModels.cs" />
@@ -520,7 +521,6 @@
     <Content Include="Content\2011.3.1115\Windows7\slider-v.gif" />
     <Content Include="Content\2011.3.1115\Windows7\sprite-vertical.png" />
     <Content Include="Content\2011.3.1115\Windows7\sprite.png" />
-    <Content Include="Content\HerokuSite.css" />
     <Content Include="Global.asax" />
     <Content Include="jqunback-1.51.min.js" />
     <Content Include="README.txt" />

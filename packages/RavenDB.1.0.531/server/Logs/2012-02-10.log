@@ -1,0 +1,11 @@
+time,logger,level,message,exception
+2012-02-10 23:33:01.6679,Raven.Database.Impl.DocumentCacher,Info,"MemoryCache Settings:
+  PhysicalMemoryLimit = 98
+  CacheMemoryLimit    = 1000341504
+  PollingInterval     = 00:02:00",
+2012-02-10 23:33:01.7529,Raven.Storage.Esent.TransactionalStorage,Info,"Esent Settings:
+  MaxVerPages      = 32768
+  CacheSizeMax     = 262144
+  DatabasePageSize = 4096",
+2012-02-10 23:33:02.9939,Raven.Database.DocumentDatabase,Debug,Delete a document with key: Raven/Backup/Status and etag ,
+2012-02-10 23:33:03.0339,Raven.Storage.Esent.StorageActions.DocumentStorageActions,Debug,"Document with key 'Raven/Backup/Status' was not found, and considered deleted",

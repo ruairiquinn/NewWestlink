@@ -89,24 +89,23 @@ page width. Or, you can specify an exact pixel width. */
     margin-right: auto;
 }
 
-#heroku-header {
-overflow: hidden;
-display: inline-block;
-margin: 0;
-padding: 0;
-border: 0;
-font-weight: inherit;
-font-style: inherit;
-font-size: 100%;
-font-family: arial, helvetica, sans-serif;
-vertical-align: baseline;
-min-width: 1044px;
-background-color: #29264d;
-border-bottom-style: solid;
-border-bottom-width: 3px;
-border-bottom-color: #494573;
-height: 91px;
-border-image: initial;
+#heroku-header
+{
+    overflow: hidden;    
+    margin: 0;
+    padding: 1.5em;
+    border: 0;
+    font-weight: inherit;
+    font-style: inherit;
+    font-size: large;
+    font-family: impact;
+    vertical-align: baseline;    
+    background-color: #29264d;
+    border-bottom-style: solid;
+    border-bottom-width: 3px;
+    border-bottom-color: #494573;
+    height: 91px;
+    border-image: initial;
 }
 
 #header

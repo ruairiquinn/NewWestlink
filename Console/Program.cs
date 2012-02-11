@@ -83,8 +83,8 @@ namespace TestHarness
                                          IsEmployed = true,
                                          LastUpdated = DateTime.Now
                                      };
-                    var clientRepo = new ClientRepository(new EventPublisher(new List<object>()));
-                    clientRepo.Add(client);
+                    ////var clientRepo = new ClientRepository(new EventPublisher(new List<object>()));
+                    //clientRepo.Add(client);
                     Console.WriteLine("{0} {1}", client.Forename, client.Surname);
                 }
             }

@@ -11,7 +11,7 @@
     font-weight: inherit;
     height: 91px;
     margin: 0;
-    min-width: 1044px;
+    width: 100%;
     overflow: hidden;
     padding: 0;
     vertical-align: baseline;
@@ -25,6 +25,7 @@
     font-size: 100%;
     font-style: inherit;
     font-weight: inherit;
+    width: 100%;
     margin: 0;
     padding: 0;
     vertical-align: baseline;
